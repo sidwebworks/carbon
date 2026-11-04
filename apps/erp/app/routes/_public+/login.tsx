@@ -588,17 +588,8 @@ export default function LoginRoute() {
 
   return (
     <>
-      <div className="flex justify-center mb-8">
-        <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
-          alt="Carbon Logo"
-          className="w-24 dark:hidden"
-        />
-        <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
-          alt="Carbon Logo"
-          className="w-24 hidden dark:block"
-        />
+      <div className="flex justify-center mb-8 text-red-400 text-2xl">
+        Looks like forked builds worked!!!
       </div>
       <div className="rounded-lg p-8 w-[380px]">
         {fetcher.data?.success === true && fetcher.data?.mode === "login" ? (
